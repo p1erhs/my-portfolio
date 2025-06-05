@@ -1,20 +1,5 @@
-import dynamic from "next/dynamic";
-
-const FaLinkedin = dynamic(
-    () =>
-        import("react-icons/fa").then((mod) => ({
-            default: mod.FaLinkedin,
-        })),
-    { ssr: false }
-);
-
-const FaGithub = dynamic(
-    () =>
-        import("react-icons/fa").then((mod) => ({
-            default: mod.FaGithub,
-        })),
-    { ssr: false }
-);
+// src/components/Footer.tsx
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -41,6 +26,13 @@ export default function Footer() {
                         className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-yellow-400"
                     >
                         <FaGithub className="h-5 w-5" />
+                    </a>
+                    <a
+                        href="mailto:piergiannis@hotmail.com"
+                        aria-label="Email"
+                        className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-yellow-400"
+                    >
+                        <FaEnvelope className="h-5 w-5" />
                     </a>
                 </div>
             </div>
