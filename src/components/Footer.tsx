@@ -1,4 +1,8 @@
-import { FaLinkedin, FaGithub, FaHotjar } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const FaLinkedin = dynamic(() => import("react-icons/fa").then((mod) => mod.FaLinkedin), { ssr: false });
+const FaGithub = dynamic(() => import("react-icons/fa").then((mod) => mod.FaGithub), { ssr: false });
+const FaHotjar = dynamic(() => import("react-icons/fa").then((mod) => mod.FaHotjar), { ssr: false });
 
 export default function Footer() {
     return (
