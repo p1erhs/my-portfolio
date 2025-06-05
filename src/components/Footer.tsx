@@ -1,5 +1,10 @@
 // src/components/Footer.tsx
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import type { ComponentType } from "react";
+
+const LinkedInIcon = FaLinkedin as unknown as ComponentType<any>;
+const GitHubIcon = FaGithub as unknown as ComponentType<any>;
+const EmailIcon = FaEnvelope as unknown as ComponentType<any>;
 
 export default function Footer() {
     return (
@@ -16,7 +21,7 @@ export default function Footer() {
                         aria-label="LinkedIn"
                         className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-yellow-400"
                     >
-                        <FaLinkedin className="h-5 w-5" />
+                        <LinkedInIcon className="h-5 w-5" />
                     </a>
                     <a
                         href="https://github.com/p1erhs"
@@ -25,14 +30,14 @@ export default function Footer() {
                         aria-label="GitHub"
                         className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-yellow-400"
                     >
-                        <FaGithub className="h-5 w-5" />
+                        <GitHubIcon className="h-5 w-5" />
                     </a>
                     <a
                         href="mailto:piergiannis@hotmail.com"
                         aria-label="Email"
                         className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-yellow-400"
                     >
-                        <FaEnvelope className="h-5 w-5" />
+                        <EmailIcon className="h-5 w-5" />
                     </a>
                 </div>
             </div>
