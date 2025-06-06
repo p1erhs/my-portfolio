@@ -12,14 +12,18 @@
     "@headlessui/react": "latest",
     "@heroicons/react": "latest",
     "clsx": "latest",
+    "fs": "^0.0.1-security",
     "next": "latest",
     "next-themes": "^0.4.6",
     "nodemailer": "latest",
+    "path": "^0.12.7",
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "latest",
     "react-icons": "latest",
-    "react-simple-typewriter": "latest"
+    "react-simple-typewriter": "latest",
+    "simple-icons": "^15.0.0",
+    "svgo": "^3.3.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",

@@ -9,20 +9,20 @@ export default function About() {
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                         My name is <strong>Ioannis (John) Pieris</strong>. I graduated with a BSc in Computer Science
                         from Aristotle University of Thessaloniki (01/2019 – 01/2024). My thesis was on “Dynamic Website
-                        Development for the Temple of Rotonta,” where I built a full-stack educational platform using
-                        HTML, CSS, PHP, and MySQL. I implemented hierarchical roles for students and tutors and designed
-                        a database to manage announcements, lessons, and projects.
+                        Development for the Temple of Rotonta,” where me and my colleague Thanos Bamidis built a dynamic
+                        website.
                     </p>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                         I’m passionate about programming, web development, and problem solving. I have strong perception
                         in understanding hard problems and have experience in both front-end and back-end technologies.
                         I recently completed a 3-month internship at LoopCV as a Web Developer, where I contributed to
-                        core features, improved performance, and enhanced the UI using Next.js and Node.js.
+                        core features, improved functionality of various micro-services with Node.js, and enhanced the
+                        UI using Vue.js.
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                        Outside of coding, I’m a competitive powerlifter with 2 national titles in Greece and a national
-                        record in the 83kg category (IPF). I’m disciplined, goal-oriented, and driven by lifelong
-                        learning.
+                        Outside of coding, I’m a competitive powerlifter with 2 national titles in Greece and having
+                        national record in Squat (285.5 kg) and in Total (751 kg) in 83 kg weight category (HPF). I’m
+                        disciplined, goal-oriented, and driven by lifelong learning.
                     </p>
                 </div>
                 <div className="mx-auto md:mx-0 w-48 h-48 relative rounded-full overflow-hidden ring-4 ring-accent dark:ring-yellow-400">
