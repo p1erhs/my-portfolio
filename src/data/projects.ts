@@ -27,6 +27,26 @@ export const projects: Project[] = [
         demoUrl: "#",
     },
     {
+        title: "Job Search Optimizer",
+        description:
+            "A Node.js tool that ingests user search logs (CSV), calculates success rates, " +
+            "and applies an exponential backoff algorithm to schedule future searches efficiently. " +
+            "It groups searches by user and query, computes metrics like total searches, total jobs found, " +
+            "and consecutive failures, then outputs an optimized search schedule (CSV) ranked by priority. " +
+            "Includes analytics for zero‐result searches per platform to measure search efficiency.",
+        techStack: ["Node.js"],
+        imageSrc: "/images/projects/crypto-screenshot.svg",
+        githubUrl: "https://github.com/p1erhs/Exponential-back-off-algorithm-for-job-searching",
+        //demoUrl: "",
+    },
+    {
+        title: "Alarm Point",
+        description:
+            "Implemented a Node.js script that connects to a IOredis client, takes a list with queues and sends a notification to a slack url if a number of waiting jobs overcomes the number of 30000.",
+        techStack: ["Javascript"],
+        imageSrc: "/images/projects/crypto-screenshot.svg",
+    },
+    {
         title: "Fitness Mobile App (Team Project)",
         description:
             "Designed a Java-based mobile app with stored exercises and generating personalized fitness plans. Adapted workout routines based on user goals and tracked progress over time.",
@@ -45,34 +65,12 @@ export const projects: Project[] = [
         //demoUrl: "#",
     },
     {
-        title: "Gym Appointment Automation",
+        title: "Gym Appointment Automation (Personal Project)",
         description:
             "Implemented a script that uses the credentials given to login to Aristotle's university website for gym and appoints the first available session for the next day.",
         techStack: ["Javascript"],
         imageSrc: "/images/projects/crypto-screenshot.svg",
-        githubUrl: "https://github.com/p1erhs/AuthGymAppointment/tree/main",
-        //demoUrl: "",
-    },
-    {
-        title: "Alarm Point",
-        description:
-            "Implemented a Node.js script that connects to a IOredis client, takes a list with queues and sends a notification to a slack url if a number of waiting jobs overcomes the number of 30000.",
-        techStack: ["Javascript"],
-        imageSrc: "/images/projects/crypto-screenshot.svg",
-        //githubUrl: "https://github.com/p1erhs/AuthGymAppointment/tree/main",
-        //demoUrl: "",
-    },
-    {
-        title: "Job Search Optimizer",
-        description:
-            "A Node.js tool that ingests user search logs (CSV), calculates success rates, " +
-            "and applies an exponential backoff algorithm to schedule future searches efficiently. " +
-            "It groups searches by user and query, computes metrics like total searches, total jobs found, " +
-            "and consecutive failures, then outputs an optimized search schedule (CSV) ranked by priority. " +
-            "Includes analytics for zero‐result searches per platform to measure search efficiency.",
-        techStack: ["Node.js"],
-        imageSrc: "/images/projects/crypto-screenshot.svg",
-        //githubUrl: "https://github.com/p1erhs/AuthGymAppointment/tree/main",
+        githubUrl: "https://github.com/p1erhs/AuthGymAppointment.git",
         //demoUrl: "",
     },
 ];
