@@ -42,7 +42,7 @@ export const projects: Project[] = [
         description:
             "This tool is inspired by RPECalculator.com, but extended to include RPE values down to 4.0 based on my own training needs." +
             "By offering a wider RPE range and an integrated Back-off planner, you can tailor your intensity and volume precisely.",
-        techStack: ["HTML,CSS,Javascipt"],
+        techStack: ["HTML", "CSS", "Javascipt"],
         imageSrc: "/images/projects/rpe-calculator.png",
         githubUrl: "https://github.com/p1erhs/RPE-Calculator",
         demoUrl: "https://p1erhs.github.io/RPE-Calculator/",
@@ -58,10 +58,23 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/p1erhs/linkedin-opentowork",
     },
     {
+        title: "Softone vs Stripe Export Comparator (Internship Project)",
+        description:
+            "This Flask web app allows authenticated users to upload financial export files from Softone and Stripe, and automatically compare them to identify:" +
+            "Missing Mark Codes in Stripe" +
+            "Missing Invoice IDs in Softone" +
+            "Differences in total amounts per invoice" +
+            "Softone entries with missing Mark Codes",
+        techStack: ["Html", "CSS", "Flask"],
+        imageSrc: "/images/projects/accounting.png",
+        githubUrl: "https://github.com/p1erhs/ExportsComparison",
+        demoUrl: "https://loopcv.pythonanywhere.com/",
+    },
+    {
         title: "Educontent (University project)",
         description:
             "Dynamic website with educational content . Implemented tutor and student roles, so they can have specific properties and acceses to website's content.",
-        techStack: ["Html,CSS,PHP"],
+        techStack: ["Html", "CSS", "PHP"],
         imageSrc: "/images/projects/fitness-app-screenshot.svg",
         githubUrl: "https://github.com/p1erhs/Educontent",
         //demoUrl: "#",
