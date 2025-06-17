@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Hero() {
     const [text] = useTypewriter({
-        words: ["Full-Stack Developer", "Competitive Powerlifter"],
+        words: ["Full-Stack Developer", "Powerlifting Athlete"],
         loop: 0,
         delaySpeed: 2000,
     });

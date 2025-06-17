@@ -11,23 +11,21 @@ export const projects: Project[] = [
     {
         title: "LoopCV Internship (Web Developer)",
         description:
-            "Completed a 3-month internship at LoopCV as a Web Developer. Contributed to feature development, bug fixes, and UI enhancements. Worked primarily with Next.js, Node.js, and MongoDB, helping to improve performance and add user-request features.",
+            "Completed a 3-month internship at LoopCV as a Web Developer. Contributed to feature development, bug fixes, and UI enhancements. Worked primarily with Vue.js, Node.js, and MongoDB, helping to improve performance and add user-request features.",
         techStack: ["Vue.js", "Node.js", "MongoDB", "JavaScript", "Python"],
-        imageSrc: "/images/projects/loopcv-screenshot.svg",
+        imageSrc: "/images/projects/loopcv-screenshot.png",
         githubUrl: "https://github.com/p1erhs",
         demoUrl: "https://loopcv.com",
     },
     {
         title: "Dynamic Website for Rotonta Temple (Thesis)",
         description:
-            "A full-stack educational platform developed as my BSc thesis. Built with PHP, MySQL, HTML/CSS. Included hierarchical roles (students/tutors), announcements, lesson modules, and project submissions. I handled front-end, back-end logic, and database design.",
+            "A dynamic platform developed as my BSc thesis. Built with PHP, MySQL, HTML/CSS. This website is dedicated to temple of Rotonta in Thessaloniki, it was needed to show people all history behind this historical temple so we used the best practises to create a modern responsive website so it can be displayed with great user experience.",
         techStack: ["HTML", "CSS", "PHP", "WordPress"],
         imageSrc: "/images/projects/rotonta-screenshot.svg",
-        githubUrl: "#",
-        demoUrl: "#",
     },
     {
-        title: "Job Search Optimizer",
+        title: "Job Search Optimizer (Internship Project)",
         description:
             "A Node.js tool that ingests user search logs (CSV), calculates success rates, " +
             "and applies an exponential backoff algorithm to schedule future searches efficiently. " +
@@ -35,9 +33,38 @@ export const projects: Project[] = [
             "and consecutive failures, then outputs an optimized search schedule (CSV) ranked by priority. " +
             "Includes analytics for zero‐result searches per platform to measure search efficiency.",
         techStack: ["Node.js"],
-        imageSrc: "/images/projects/crypto-screenshot.svg",
+        imageSrc: "/images/projects/backoff.png",
         githubUrl: "https://github.com/p1erhs/Exponential-back-off-algorithm-for-job-searching",
         //demoUrl: "",
+    },
+    {
+        title: "Rpe Calculator (Personal Project)",
+        description:
+            "This tool is inspired by RPECalculator.com, but extended to include RPE values down to 4.0 based on my own training needs." +
+            "By offering a wider RPE range and an integrated Back-off planner, you can tailor your intensity and volume precisely.",
+        techStack: ["HTML,CSS,Javascipt"],
+        imageSrc: "/images/projects/rpe-calculator.png",
+        githubUrl: "https://github.com/p1erhs/RPE-Calculator",
+        demoUrl: "https://p1erhs.github.io/RPE-Calculator/",
+    },
+    {
+        title: "LinkedIn OpenToWork Automator (Internship Project)",
+        description:
+            "A dual-version tool to automate commenting on LinkedIn post with hashtag #OpenToWork  \n" +
+            "1. **CLI Script** this script automates the process with simplicity you just have to copy paste on your browser's console.  \n" +
+            "2. **Chrome Extension** (Manifest v3) for a one-click toggle from your browser toolbar with its own settings page.",
+        imageSrc: "/images/projects/crypto-screenshot.svg",
+        techStack: ["JavaScript"],
+        githubUrl: "https://github.com/p1erhs/linkedin-opentowork",
+    },
+    {
+        title: "Educontent (University project)",
+        description:
+            "Dynamic website with educational content . Implemented tutor and student roles, so they can have specific properties and acceses to website's content.",
+        techStack: ["Html,CSS,PHP"],
+        imageSrc: "/images/projects/fitness-app-screenshot.svg",
+        githubUrl: "https://github.com/p1erhs/Educontent",
+        //demoUrl: "#",
     },
     {
         title: "Alarm Point",
@@ -45,15 +72,6 @@ export const projects: Project[] = [
             "Implemented a Node.js script that connects to a IOredis client, takes a list with queues and sends a notification to a slack url if a number of waiting jobs overcomes the number of 30000.",
         techStack: ["Javascript"],
         imageSrc: "/images/projects/crypto-screenshot.svg",
-    },
-    {
-        title: "Fitness Mobile App (Team Project)",
-        description:
-            "Designed a Java-based mobile app with stored exercises and generating personalized fitness plans. Adapted workout routines based on user goals and tracked progress over time.",
-        techStack: ["Java"],
-        imageSrc: "/images/projects/fitness-app-screenshot.svg",
-        githubUrl: "https://github.com/p1erhs/ProWorkout",
-        //demoUrl: "#",
     },
     {
         title: "Cryptography Algorithms (University Project)",

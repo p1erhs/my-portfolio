@@ -1,3 +1,4 @@
+// src/components/Projects.tsx
 import { projects } from "../data/projects";
 import Image from "next/image";
 
@@ -12,9 +13,10 @@ export default function Projects() {
                     {projects.map((proj) => (
                         <div
                             key={proj.title}
-                            className="flex flex-col md:flex-row bg-neutral dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
+                            className="flex flex-col bg-neutral dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
                         >
-                            <div className="relative w-full h-48 md:h-auto md:w-48">
+                            {/* Image on top */}
+                            <div className="w-full h-56 md:h-64 relative">
                                 <Image
                                     src={proj.imageSrc}
                                     alt={proj.title}
@@ -23,13 +25,15 @@ export default function Projects() {
                                     className="object-top"
                                 />
                             </div>
-                            <div className="p-6 flex flex-col justify-between">
+
+                            {/* Content below */}
+                            <div className="p-6 flex flex-col flex-1">
                                 <div>
                                     <h3 className="text-2xl font-semibold text-dark dark:text-gray-100 mb-2">
                                         {proj.title}
                                     </h3>
                                     <p className="text-gray-700 dark:text-gray-300 mb-4">{proj.description}</p>
-                                    <div className="flex flex-wrap gap-2">
+                                    <div className="flex flex-wrap gap-2 mb-4">
                                         {proj.techStack.map((tech) => (
                                             <span
                                                 key={tech}
@@ -40,7 +44,7 @@ export default function Projects() {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="mt-4 flex space-x-4">
+                                <div className="mt-auto flex space-x-4">
                                     {proj.githubUrl && (
                                         <a
                                             href={proj.githubUrl}
@@ -51,7 +55,7 @@ export default function Projects() {
                                             GitHub Repo →
                                         </a>
                                     )}
-                                    {proj.demoUrl && (
+                                    {proj.demoUrl ? (
                                         <a
                                             href={proj.demoUrl}
                                             target="_blank"
@@ -60,6 +64,8 @@ export default function Projects() {
                                         >
                                             Live Demo →
                                         </a>
+                                    ) : (
+                                        <span className="text-gray-500 dark:text-gray-600">No Demo</span>
                                     )}
                                 </div>
                             </div>
